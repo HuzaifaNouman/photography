@@ -31,37 +31,37 @@ export default function HomePage() {
     {
       title: "WEDDINGS",
       description: "Capturing love stories with cinematic elegance",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTyYXgc71beEucaT-eD3lX5vtjW75FTz-SSQ&s",
       count: "150+ Weddings",
     },
     {
       title: "CORPORATE",
       description: "Professional imagery for business excellence",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxBDJsAGcLFpaQQyX1fsKAvonmT-QkvVL7oA&s",
       count: "200+ Projects",
     },
     {
       title: "FASHION",
       description: "Editorial and commercial fashion photography",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEaMi6CwBk1RPWwPAeN801C1jxZHFUWXoq5g&s",
       count: "100+ Shoots",
     },
     {
       title: "PACKAGES",
       description: "Comprehensive photography solutions",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://images.pexels.com/photos/842876/pexels-photo-842876.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       count: "Custom Plans",
     },
     {
       title: "BTS",
       description: "Behind the scenes and candid moments",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcEn6eQ8zrx-8WrihKS2cS4nd15Vi959Hllw&s",
       count: "50+ Stories",
     },
     {
       title: "REVIEWS",
       description: "Client testimonials and experiences",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJgxBIt2osdXC-JiDF_4YupjljvXq8LCFfc_gkkhSYCqxCII1ptlhmBALxC6HFfvXFS1U&usqp=CAU",
       count: "5★ Rating",
     },
   ]
@@ -131,7 +131,7 @@ export default function HomePage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-fixed"
           style={{
-            backgroundImage: `url('/placeholder.svg?height=1080&width=1920')`,
+            backgroundImage: `url('https://images.pexels.com/photos/1491282/pexels-photo-1491282.jpeg?cs=srgb&dl=pexels-lood-goosen-521064-1491282.jpg&fm=jpg')`,
           }}
         >
           <div className="absolute inset-0 bg-black/60"></div>
@@ -270,8 +270,8 @@ export default function HomePage() {
             <div className={`${isVisible ? "animate-fade-in-right" : "opacity-0"}`}>
               <div className="relative">
                 <img
-                  src="/placeholder.svg?height=600&width=500"
-                  alt="Hamza - Professional Photographer"
+                  src="https://images.pexels.com/photos/1540977/pexels-photo-1540977.jpeg?cs=srgb&dl=pexels-sulimansallehi-1540977.jpg&fm=jpg"
+                  alt="Professional Photographer"
                   className="w-full rounded-lg shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-lg">
