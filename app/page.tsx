@@ -61,7 +61,8 @@ export default function HomePage() {
     {
       title: "REVIEWS",
       description: "Client testimonials and experiences",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJgxBIt2osdXC-JiDF_4YupjljvXq8LCFfc_gkkhSYCqxCII1ptlhmBALxC6HFfvXFS1U&usqp=CAU",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJgxBIt2osdXC-JiDF_4YupjljvXq8LCFfc_gkkhSYCqxCII1ptlhmBALxC6HFfvXFS1U&usqp=CAU",
       count: "5★ Rating",
     },
   ]
@@ -70,7 +71,7 @@ export default function HomePage() {
     {
       name: "Aisha & Ahmed",
       event: "Wedding Photography",
-      text: "Hamza captured our special day with such artistry and emotion. Every photo tells our love story perfectly.",
+      text: "Ali captured our special day with such artistry and emotion. Every photo tells our love story perfectly.",
       rating: 5,
     },
     {
@@ -82,14 +83,14 @@ export default function HomePage() {
     {
       name: "Tech Solutions Ltd",
       event: "Corporate Event",
-      text: "Outstanding work on our company event. Hamza understood our vision and delivered exceptional results.",
+      text: "Outstanding work on our company event. Ali understood our vision and delivered exceptional results.",
       rating: 5,
     },
   ]
 
   const stats = [
-    { icon: Camera, number: "500+", label: "Projects Completed" },
-    { icon: Users, number: "300+", label: "Happy Clients" },
+    { icon: Camera, number: "664+", label: "Posts Created" },
+    { icon: Users, number: "6.9K+", label: "Followers" },
     { icon: Award, number: "5", label: "Years Experience" },
     { icon: Star, number: "4.9", label: "Average Rating" },
   ]
@@ -102,7 +103,7 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Camera className="h-8 w-8 text-primary" />
-              <span className="font-serif text-xl font-bold">Visuals by Hamza</span>
+              <span className="font-serif text-xl font-bold">Ali Bin Ahsan</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#home" className="hover:text-primary transition-colors">
@@ -140,13 +141,13 @@ export default function HomePage() {
         <div
           className={`relative z-10 text-center max-w-4xl mx-auto px-4 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
         >
-          <Badge className="mb-6 bg-primary/20 text-primary border-primary/30">Visual Storyteller</Badge>
+          <Badge className="mb-6 bg-primary/20 text-primary border-primary/30">Wedding Photographer & Films</Badge>
           <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            TURNING MOMENTS INTO
-            <span className="block text-primary">CINEMATIC ART</span>
+            FILMING VIDEOS IS MY THING
+            <span className="block text-primary">AMBIENT PORTRAITS</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-2xl mx-auto">
-            Based in Lahore, Pakistan • Covering all Pakistan • Available for bookings
+            Based in Lahore • Gujranwala • Gujrat • Available for bookings
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 hover-glow">
@@ -159,7 +160,7 @@ export default function HomePage() {
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
             >
               <Phone className="mr-2 h-5 w-5" />
-              +92 302 4939706
+              Contact for Booking
             </Button>
           </div>
         </div>
@@ -197,7 +198,8 @@ export default function HomePage() {
               OUR <span className="text-primary">SPECIALTIES</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              From intimate weddings to corporate events, we capture every moment with artistic precision
+              From intimate weddings to ambient portraits, we capture every moment with cinematic precision and artistic
+              vision
             </p>
           </div>
 
@@ -237,33 +239,34 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className={`${isVisible ? "animate-fade-in-left" : "opacity-0"}`}>
-              <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">About Hamza</Badge>
+              <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">About Ali</Badge>
               <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
                 PASSIONATE ABOUT
-                <span className="block text-primary">VISUAL STORYTELLING</span>
+                <span className="block text-primary">WEDDING FILMS & PORTRAITS</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                With over 5 years of experience in photography and videography, I specialize in capturing the essence of
-                life's most precious moments. Based in the vibrant city of Lahore, I've had the privilege of documenting
-                hundreds of weddings, corporate events, and fashion shoots across Pakistan.
+                With over 5 years of experience in wedding photography and filmmaking, I specialize in capturing the
+                essence of life's most precious moments. Based across Lahore, Gujranwala, and Gujrat, I've had the
+                privilege of documenting hundreds of weddings and creating ambient portraits that tell compelling
+                stories.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                My approach combines technical expertise with artistic vision, ensuring every frame tells a compelling
-                story. From the intimate glances between newlyweds to the dynamic energy of corporate events, I believe
-                in creating timeless imagery that resonates with emotion.
+                My approach combines technical expertise with artistic vision, with filming videos being my specialty.
+                From the intimate glances between newlyweds to the dynamic energy of celebrations, I believe in creating
+                timeless imagery and films that resonate with emotion and capture the true essence of each moment.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center space-x-2">
                   <Camera className="h-5 w-5 text-primary" />
-                  <span>Professional Photography</span>
+                  <span>Wedding Photography</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Video className="h-5 w-5 text-primary" />
-                  <span>Cinematic Videography</span>
+                  <span>Cinematic Wedding Films</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Heart className="h-5 w-5 text-primary" />
-                  <span>Passionate Storytelling</span>
+                  <span>Ambient Portraits</span>
                 </div>
               </div>
             </div>
@@ -325,10 +328,10 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">Services</Badge>
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
-              PHOTOGRAPHY <span className="text-primary">PACKAGES</span>
+              WEDDING <span className="text-primary">PACKAGES</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Tailored packages to capture your special moments with professional excellence
+              Tailored wedding packages to capture your special day with cinematic films and ambient portraits
             </p>
           </div>
 
@@ -347,7 +350,7 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                    <span>Cinematic highlights video</span>
+                    <span>Cinematic wedding film</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
@@ -366,25 +369,25 @@ export default function HomePage() {
               <CardContent className="p-8">
                 <div className="text-center mb-6">
                   <Video className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <h3 className="font-serif text-2xl font-bold mb-2">Corporate Package</h3>
-                  <p className="text-muted-foreground">Professional business photography</p>
+                  <h3 className="font-serif text-2xl font-bold mb-2">Film Package</h3>
+                  <p className="text-muted-foreground">Cinematic wedding films</p>
                 </div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                    <span>Event documentation</span>
+                    <span>Cinematic highlight reel</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                    <span>Team headshots</span>
+                    <span>Full ceremony coverage</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                    <span>Product photography</span>
+                    <span>Ambient portrait sessions</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                    <span>Same-day delivery</span>
+                    <span>Same-day preview</span>
                   </li>
                 </ul>
                 <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">Get Quote</Button>
@@ -395,8 +398,8 @@ export default function HomePage() {
               <CardContent className="p-8">
                 <div className="text-center mb-6">
                   <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <h3 className="font-serif text-2xl font-bold mb-2">Fashion Package</h3>
-                  <p className="text-muted-foreground">Editorial and commercial shoots</p>
+                  <h3 className="font-serif text-2xl font-bold mb-2">Portrait Package</h3>
+                  <p className="text-muted-foreground">Ambient portrait sessions</p>
                 </div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center">
@@ -443,15 +446,15 @@ export default function HomePage() {
                   <Phone className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <p className="text-muted-foreground">+92 302 4939706</p>
-                    <p className="text-sm text-primary">Available for bookings</p>
+                    <p className="text-muted-foreground">Contact for booking details</p>
+                    <p className="text-sm text-primary">Available for consultations</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <Mail className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">visuals.by.hamza@gmail.com</p>
+                    <p className="text-muted-foreground">alibinahsan@gmail.com</p>
                     <p className="text-sm text-primary">Quick response guaranteed</p>
                   </div>
                 </div>
@@ -459,16 +462,16 @@ export default function HomePage() {
                   <MapPin className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Location</h3>
-                    <p className="text-muted-foreground">Based in Lahore, Pakistan</p>
-                    <p className="text-sm text-primary">Covering all Pakistan</p>
+                    <p className="text-muted-foreground">Lahore | Gujranwala | Gujrat</p>
+                    <p className="text-sm text-primary">Covering Punjab region</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <Instagram className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Social Media</h3>
-                    <p className="text-muted-foreground">@visuals_by_hamza</p>
-                    <p className="text-sm text-primary">492 posts • 5,039 followers</p>
+                    <p className="text-muted-foreground">@alibinahsan</p>
+                    <p className="text-sm text-primary">664 posts • 6,938 followers</p>
                   </div>
                 </div>
               </div>
@@ -509,8 +512,8 @@ export default function HomePage() {
                     <select className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
                       <option>Select event type</option>
                       <option>Wedding</option>
-                      <option>Corporate Event</option>
-                      <option>Fashion Shoot</option>
+                      <option>Portrait Session</option>
+                      <option>Wedding Film</option>
                       <option>Other</option>
                     </select>
                   </div>
@@ -539,11 +542,12 @@ export default function HomePage() {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <Camera className="h-8 w-8 text-primary" />
-                <span className="font-serif text-xl font-bold">Visuals by Hamza</span>
+                <span className="font-serif text-xl font-bold">Ali Bin Ahsan</span>
               </div>
               <p className="text-muted-foreground mb-4 max-w-md">
-                Visual Storyteller turning moments into cinematic art. Based in Lahore, covering all Pakistan with
-                professional photography and videography services.
+                Wedding Photographer & Films specialist. Filming videos is my thing with ambient portraits. Based in
+                Lahore, Gujranwala, and Gujrat, covering all Punjab with professional photography and videography
+                services.
               </p>
               <div className="flex space-x-4">
                 <Instagram className="h-6 w-6 text-primary hover:text-primary/80 cursor-pointer" />
@@ -562,17 +566,17 @@ export default function HomePage() {
                 </li>
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Corporate Events
+                    Wedding Films
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Fashion Shoots
+                    Ambient Portraits
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Videography
+                    Cinematic Videos
                   </a>
                 </li>
               </ul>
@@ -581,16 +585,16 @@ export default function HomePage() {
             <div>
               <h3 className="font-semibold mb-4">Contact</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li>+92 302 4939706</li>
-                <li>visuals.by.hamza@gmail.com</li>
-                <li>Lahore, Pakistan</li>
-                <li>@visuals_by_hamza</li>
+                <li>Contact for booking</li>
+                <li>alibinahsan@gmail.com</li>
+                <li>Lahore | Gujranwala | Gujrat</li>
+                <li>@alibinahsan</li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 Visuals by Hamza. All rights reserved. | Photography & Videography Services</p>
+            <p>&copy; 2024 Ali Bin Ahsan. All rights reserved. | Wedding Photography & Films</p>
           </div>
         </div>
       </footer>
