@@ -27,6 +27,16 @@ export default function HomePage() {
     setIsVisible(true)
   }, [])
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    }
+  }
+
   const portfolioCategories = [
     {
       title: "WEDDINGS",
@@ -103,24 +113,39 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Camera className="h-8 w-8 text-primary" />
-              <span className="font-serif text-xl font-bold">Logo</span>
+              <span className="font-serif text-xl font-bold">CaptureMoments</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#home" className="hover:text-primary transition-colors">
+              <button
+                onClick={() => scrollToSection("home")}
+                className="hover:text-primary transition-colors cursor-pointer"
+              >
                 HOME
-              </a>
-              <a href="#portfolio" className="hover:text-primary transition-colors">
+              </button>
+              <button
+                onClick={() => scrollToSection("portfolio")}
+                className="hover:text-primary transition-colors cursor-pointer"
+              >
                 PORTFOLIO
-              </a>
-              <a href="#about" className="hover:text-primary transition-colors">
+              </button>
+              <button
+                onClick={() => scrollToSection("about")}
+                className="hover:text-primary transition-colors cursor-pointer"
+              >
                 ABOUT
-              </a>
-              <a href="#services" className="hover:text-primary transition-colors">
+              </button>
+              <button
+                onClick={() => scrollToSection("services")}
+                className="hover:text-primary transition-colors cursor-pointer"
+              >
                 SERVICES
-              </a>
-              <a href="#contact" className="hover:text-primary transition-colors">
+              </button>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="hover:text-primary transition-colors cursor-pointer"
+              >
                 CONTACT
-              </a>
+              </button>
             </div>
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Book Session</Button>
           </div>
@@ -141,13 +166,15 @@ export default function HomePage() {
         <div
           className={`relative z-10 text-center max-w-4xl mx-auto px-4 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
         >
-          <Badge className="mb-6 bg-primary/20 text-primary border-primary/30">Wedding Photographer & Films</Badge>
+          <Badge className="mb-6 bg-primary/20 text-primary border-primary/30">
+            Professional Photography & Videography
+          </Badge>
           <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            FILMING VIDEOS IS MY THING
-            <span className="block text-primary">AMBIENT PORTRAITS</span>
+            CAPTURING LIFE'S MOST
+            <span className="block text-primary">PRECIOUS MOMENTS</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-2xl mx-auto">
-            Based in Lahore • Gujranwala • Gujrat • Available for bookings
+            Based in New York • Los Angeles • Chicago • Available worldwide for destination events
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 hover-glow">
@@ -198,8 +225,8 @@ export default function HomePage() {
               OUR <span className="text-primary">SPECIALTIES</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              From intimate weddings to ambient portraits, we capture every moment with cinematic precision and artistic
-              vision
+              From intimate weddings to corporate events, we capture every moment with artistic precision and
+              professional excellence that tells your unique story
             </p>
           </div>
 
@@ -239,34 +266,39 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className={`${isVisible ? "animate-fade-in-left" : "opacity-0"}`}>
-              <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">About Ali</Badge>
+              <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">About Our Studio</Badge>
               <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
                 PASSIONATE ABOUT
-                <span className="block text-primary">WEDDING FILMS & PORTRAITS</span>
+                <span className="block text-primary">VISUAL STORYTELLING</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                With over 5 years of experience in wedding photography and filmmaking, I specialize in capturing the
-                essence of life's most precious moments. Based across Lahore, Gujranwala, and Gujrat, I've had the
-                privilege of documenting hundreds of weddings and creating ambient portraits that tell compelling
-                stories.
+                With over 8 years of experience in professional photography and videography, our studio specializes in
+                capturing the essence of life's most meaningful moments. Based across major metropolitan areas, we've
+                had the privilege of documenting thousands of events and creating stunning visual narratives that
+                resonate with emotion and authenticity.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                My approach combines technical expertise with artistic vision, with filming videos being my specialty.
-                From the intimate glances between newlyweds to the dynamic energy of celebrations, I believe in creating
-                timeless imagery and films that resonate with emotion and capture the true essence of each moment.
+                Our approach combines cutting-edge technology with artistic vision, specializing in both photography and
+                cinematic videography. From the subtle emotions of intimate gatherings to the grand celebrations of
+                milestone events, we believe in creating timeless imagery that captures the true essence of each moment
+                and tells your story in the most beautiful way possible.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center space-x-2">
                   <Camera className="h-5 w-5 text-primary" />
-                  <span>Wedding Photography</span>
+                  <span>Event Photography</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Video className="h-5 w-5 text-primary" />
-                  <span>Cinematic Wedding Films</span>
+                  <span>Cinematic Videography</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Heart className="h-5 w-5 text-primary" />
-                  <span>Ambient Portraits</span>
+                  <span>Portrait Sessions</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Users className="h-5 w-5 text-primary" />
+                  <span>Corporate Events</span>
                 </div>
               </div>
             </div>
@@ -278,7 +310,7 @@ export default function HomePage() {
                   className="w-full rounded-lg shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-lg">
-                  <div className="text-2xl font-bold font-serif">5+</div>
+                  <div className="text-2xl font-bold font-serif">8+</div>
                   <div className="text-sm">Years Experience</div>
                 </div>
               </div>
@@ -328,10 +360,11 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">Services</Badge>
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
-              WEDDING <span className="text-primary">PACKAGES</span>
+              PHOTOGRAPHY <span className="text-primary">PACKAGES</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Tailored wedding packages to capture your special day with cinematic films and ambient portraits
+              Comprehensive photography and videography packages tailored to capture your special moments with
+              professional excellence and artistic vision
             </p>
           </div>
 
@@ -435,7 +468,7 @@ export default function HomePage() {
               LET'S CREATE <span className="text-primary">TOGETHER</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Ready to capture your special moments? Get in touch and let's discuss your vision
+              Ready to capture your special moments? Get in touch and let's discuss how we can bring your vision to life
             </p>
           </div>
 
@@ -446,7 +479,7 @@ export default function HomePage() {
                   <Phone className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <p className="text-muted-foreground">Contact for booking details</p>
+                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
                     <p className="text-sm text-primary">Available for consultations</p>
                   </div>
                 </div>
@@ -454,7 +487,7 @@ export default function HomePage() {
                   <Mail className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">alibinahsan@gmail.com</p>
+                    <p className="text-muted-foreground">hello@capturemoments.com</p>
                     <p className="text-sm text-primary">Quick response guaranteed</p>
                   </div>
                 </div>
@@ -462,16 +495,16 @@ export default function HomePage() {
                   <MapPin className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Location</h3>
-                    <p className="text-muted-foreground">Lahore | Gujranwala | Gujrat</p>
-                    <p className="text-sm text-primary">Covering Punjab region</p>
+                    <p className="text-muted-foreground">New York | LA | Chicago</p>
+                    <p className="text-sm text-primary">Worldwide destination coverage</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <Instagram className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Social Media</h3>
-                    <p className="text-muted-foreground">@alibinahsan</p>
-                    <p className="text-sm text-primary">664 posts • 6,938 followers</p>
+                    <p className="text-muted-foreground">@capturemoments</p>
+                    <p className="text-sm text-primary">1.2K posts • 15.8K followers</p>
                   </div>
                 </div>
               </div>
@@ -542,12 +575,12 @@ export default function HomePage() {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <Camera className="h-8 w-8 text-primary" />
-                <span className="font-serif text-xl font-bold">Logo</span>
+                <span className="font-serif text-xl font-bold">CaptureMoments</span>
               </div>
               <p className="text-muted-foreground mb-4 max-w-md">
-                Wedding Photographer & Films specialist. Filming videos is my thing with ambient portraits. Based in
-                Lahore, Gujranwala, and Gujrat, covering all Punjab with professional photography and videography
-                services.
+                Professional Photography & Videography Studio. Specializing in visual storytelling and capturing life's
+                most precious moments. Based in major metropolitan areas with worldwide destination coverage for all
+                your special events and milestone celebrations.
               </p>
               <div className="flex space-x-4">
                 <Instagram className="h-6 w-6 text-primary hover:text-primary/80 cursor-pointer" />
@@ -561,22 +594,22 @@ export default function HomePage() {
               <ul className="space-y-2 text-muted-foreground">
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Wedding Photography
+                    Event Photography
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Wedding Films
+                    Cinematic Videography
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Ambient Portraits
+                    Portrait Sessions
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Cinematic Videos
+                    Corporate Events
                   </a>
                 </li>
               </ul>
@@ -585,16 +618,16 @@ export default function HomePage() {
             <div>
               <h3 className="font-semibold mb-4">Contact</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li>Contact for booking</li>
-                <li>alibinahsan@gmail.com</li>
-                <li>Lahore | Gujranwala | Gujrat</li>
-                <li>@alibinahsan</li>
+                <li>+1 (555) 123-4567</li>
+                <li>hello@capturemoments.com</li>
+                <li>New York | LA | Chicago</li>
+                <li>@capturemoments</li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 Ali Bin Ahsan. All rights reserved. | Wedding Photography & Films</p>
+            <p>&copy; 2024 CaptureMoments Studio. All rights reserved. | Professional Photography & Videography</p>
           </div>
         </div>
       </footer>
