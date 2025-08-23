@@ -103,7 +103,7 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Camera className="h-8 w-8 text-primary" />
-              <span className="font-serif text-xl font-bold">Ali Bin Ahsan</span>
+              <span className="font-serif text-xl font-bold">Logo</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#home" className="hover:text-primary transition-colors">
@@ -542,7 +542,7 @@ export default function HomePage() {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <Camera className="h-8 w-8 text-primary" />
-                <span className="font-serif text-xl font-bold">Ali Bin Ahsan</span>
+                <span className="font-serif text-xl font-bold">Logo</span>
               </div>
               <p className="text-muted-foreground mb-4 max-w-md">
                 Wedding Photographer & Films specialist. Filming videos is my thing with ambient portraits. Based in
