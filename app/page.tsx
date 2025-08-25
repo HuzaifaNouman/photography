@@ -106,43 +106,43 @@ export default function HomePage() {
   ]
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground font-sans">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Camera className="h-8 w-8 text-primary" />
-              <span className="font-serif text-xl font-bold">CaptureMoments</span>
+              <span className="font-sans text-xl font-bold">Logo</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <button
                 onClick={() => scrollToSection("home")}
-                className="hover:text-primary transition-colors cursor-pointer"
+                className="hover:text-primary transition-colors cursor-pointer font-medium"
               >
                 HOME
               </button>
               <button
                 onClick={() => scrollToSection("portfolio")}
-                className="hover:text-primary transition-colors cursor-pointer"
+                className="hover:text-primary transition-colors cursor-pointer font-medium"
               >
                 PORTFOLIO
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="hover:text-primary transition-colors cursor-pointer"
+                className="hover:text-primary transition-colors cursor-pointer font-medium"
               >
                 ABOUT
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="hover:text-primary transition-colors cursor-pointer"
+                className="hover:text-primary transition-colors cursor-pointer font-medium"
               >
                 SERVICES
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="hover:text-primary transition-colors cursor-pointer"
+                className="hover:text-primary transition-colors cursor-pointer font-medium"
               >
                 CONTACT
               </button>
@@ -169,7 +169,7 @@ export default function HomePage() {
           <Badge className="mb-6 bg-primary/20 text-primary border-primary/30">
             Professional Photography & Videography
           </Badge>
-          <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="font-sans text-5xl md:text-7xl font-bold mb-6 leading-tight">
             CAPTURING LIFE'S MOST
             <span className="block text-primary">PRECIOUS MOMENTS</span>
           </h1>
@@ -208,7 +208,7 @@ export default function HomePage() {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <stat.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                <div className="text-3xl font-bold font-serif mb-2">{stat.number}</div>
+                <div className="text-3xl font-bold font-sans mb-2">{stat.number}</div>
                 <div className="text-muted-foreground">{stat.label}</div>
               </div>
             ))}
@@ -221,7 +221,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">Portfolio</Badge>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="font-sans text-4xl md:text-5xl font-bold mb-6">
               OUR <span className="text-primary">SPECIALTIES</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -267,7 +267,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className={`${isVisible ? "animate-fade-in-left" : "opacity-0"}`}>
               <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">About Our Studio</Badge>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
+              <h2 className="font-sans text-4xl md:text-5xl font-bold mb-6">
                 PASSIONATE ABOUT
                 <span className="block text-primary">VISUAL STORYTELLING</span>
               </h2>
@@ -324,7 +324,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">Testimonials</Badge>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="font-sans text-4xl md:text-5xl font-bold mb-6">
               WHAT OUR <span className="text-primary">CLIENTS SAY</span>
             </h2>
           </div>
@@ -359,7 +359,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">Services</Badge>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="font-sans text-4xl md:text-5xl font-bold mb-6">
               PHOTOGRAPHY <span className="text-primary">PACKAGES</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -464,7 +464,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">Contact</Badge>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="font-sans text-4xl md:text-5xl font-bold mb-6">
               LET'S CREATE <span className="text-primary">TOGETHER</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -575,7 +575,7 @@ export default function HomePage() {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <Camera className="h-8 w-8 text-primary" />
-                <span className="font-serif text-xl font-bold">CaptureMoments</span>
+                <span className="font-sans text-xl font-bold">Logo</span>
               </div>
               <p className="text-muted-foreground mb-4 max-w-md">
                 Professional Photography & Videography Studio. Specializing in visual storytelling and capturing life's
